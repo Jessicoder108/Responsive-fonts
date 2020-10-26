@@ -1,13 +1,13 @@
 body, html {
   text-align: center;
-  font-family: Gotham, Helvetica, Arial, sans-serif;
   font-size: 1em;
-  color: #ff8641;
 }
 
 section {
   width: 50%;
   margin: auto;
+  background-color: antiquewhite;
+  font-family: courier;
 }
 
 h1 {
@@ -20,34 +20,47 @@ h2 {
   color: #4eafb8;
 }
 
+p {
+  color: #ff8641;
+}
 
-/* ----------- Tablets larger than 768px wide ----------- */
-@media  (min-width: 768px) {
-  body{
+/* Tablet */
+@media (min-width: 768px) {
+
+  h1 {
     color: #02cbd2;
   }
 
-  h1 {
+  h2 {
     color: #fcc02a;
   }
 
-  h2 {
+  p {
     color: #7b8f8e;
+  }
+
+  section {
+    background-color: green;
+    font-family: arial;
   }
 }
 
-/*-------------- Desktops larger than 1200px wide----------*/
-@media (min-width: 1200px) {
-  body {
-    color: #6e4b61;
-}
-
+/* Desktop */
+@media (min-width: 1200px){
   h1 {
+    color: #6e4b61;
+  }
+
+  h2 {
     color: #cabd61;
   }
 
-  h2 {
+  p {
     color: #c19e74;
   }
 
+  section {
+    background-color: aliceblue;
+    font-family: courier;
+  }
 }
